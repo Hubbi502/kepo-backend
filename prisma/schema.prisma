@@ -3,9 +3,10 @@ generator client {
 }
 
 datasource db {
-  provider = "postgresql"
+  provider = "postgresql" // atau mysql/sqlite
   url      = env("DATABASE_URL")
 }
+
 
 model User {
   id                Int                @id @default(autoincrement())
